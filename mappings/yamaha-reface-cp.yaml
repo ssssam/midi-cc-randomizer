@@ -1,0 +1,61 @@
+# Yamaha Reface CP
+#
+# https://usa.yamaha.com/files/download/other_assets/7/794817/reface_en_dl_b0.pdf
+
+- code: 80
+  title: Type
+  type: list
+  list:
+  - 0 # Rd I
+  - 25 # Rd II
+  - 51 # Wr
+  - 76 # Clv
+  - 102 # Toy
+  - 127 # CP
+
+- code: 81
+  title: Drive
+  type: int
+
+- code: 17
+  title: Tremolo/wah switch
+  type: list
+  list: [0,64,127]
+
+- code: 18
+  title: Tremolo/wah depth
+  type: int
+
+- code: 19
+  title: Tremolo/wah rate
+  type: int
+
+- code: 85
+  title: Chorus/phaser switch
+  type: list
+  list: [0,64,127]
+
+- code: 86
+  title: Chorus/phaser depth
+  type: int
+
+- code: 87
+  title: Chorus/phaser rate
+  type: int
+
+- code: 88
+  title: D.delay/A.delay switch
+  type: list
+  list: [0,64,127]
+
+- code: 89
+  title: D.delay/A.delay depth
+  type: int
+
+- code: 90
+  title: D.delay/A.delay time
+  type: int
+
+- code: 91
+  title: Reverb depth
+  type: int
