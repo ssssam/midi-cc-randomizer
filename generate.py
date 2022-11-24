@@ -6,8 +6,8 @@
 
 import rtmidi
 import random
-import json
 import sys
+import yaml
 
 #from rtmidi.midiconstants import CONTROL_CHANGE
 CONTROL_CHANGE = 0xB0
@@ -23,7 +23,7 @@ print('\x1bc')
 
 # No input file? Show how to use
 if len(sys.argv) == 1:
-    print("Usage:",sys.argv[0],"mapping-file-name.json\n")
+    print("Usage:",sys.argv[0],"mapping-file-name.[json|yaml]\n")
     exit()
 
 # Assign path to mapping file from argument
@@ -73,7 +73,7 @@ print('\x1bc')
 with midiout:
     try:
         with open(mappingFile) as mappingFileHandler:
-            jsonObject = json.load(mappingFileHandler)
+            jsonObject = yaml.safe_load(mappingFileHandler)
 
             while True:
                 print('Selected output:', available_ports[int(selected_port)])
