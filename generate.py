@@ -9,7 +9,8 @@ import random
 import json
 import sys
 
-from rtmidi.midiconstants import CONTROL_CHANGE
+#from rtmidi.midiconstants import CONTROL_CHANGE
+CONTROL_CHANGE = 0xB0
 
 # Set it to True if you want to select a channel
 use_channels = False#True
