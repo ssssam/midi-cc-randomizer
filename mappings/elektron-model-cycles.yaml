@@ -1,0 +1,103 @@
+# Elektron Model:Cycles
+#
+# https://cdn.www.elektron.se/media/downloads/model-cycles/Model-Cycles-User-Manual_ENG_OS1.13_210602.pdf
+
+# Track parameters
+- code: 3
+  title: Note
+  type: int
+# dont randomize this one
+#- code: 94
+#  title: Mute 
+#  type: bool
+- code: 95
+  title: Track level
+  type: int
+- code: 10
+  title: Pan
+  type: int
+- code: 65
+  title: Pitch 
+  type: int
+- code: 80
+  title: Decay Time 
+  type: int
+- code: 16
+  title: Color 
+  type: int
+- code: 17
+  title: Shape 
+  type: int
+- code: 18
+  title: Sweep 
+  type: int
+- code: 19
+  title: Contour 
+  type: int
+- code: 12
+  title: Delay Send 
+  type: int
+- code: 13
+  title: Reverb Send 
+  type: int
+- code: Dist 7
+  title: Volume + 
+  type: int
+- code: 15
+  title: Swing 
+  type: int
+- code: 14
+  title: Chance 
+  type: int
+- code: 70
+  title: Machine Selection
+  list: [0,1,2,3,4,5]
+
+# Playback parameters
+- code: 66
+  title: Punch 
+  type: int
+- code: 67
+  title: Gate 
+  type: int
+
+# LFO parameters
+- code: 102
+  title: Speed 
+  type: int
+- code: 103
+  title: Multiplier 
+  type: int
+- code: 104
+  title: Fade In/Out 
+  type: int
+- code: 105
+  title: Destination 
+  type: int
+- code: 106
+  title: Waveform 
+  type: int
+- code: 107
+  title: Start Phase 
+  type: int
+- code: 108
+  title: Reset 
+  type: int
+- code: 109
+  title: Depth
+  type: int
+  # Depth 109 (LSB: 110)
+
+# FX parameters
+- code: 85
+  title: Delay Time 
+  type: int
+- code: 86
+  title: Delay Feedback 
+  type: int
+- code: 87
+  title: Reverb Size 
+  type: int
+- code: 88
+  title: Reverb Tone
+  type: int
